@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Personal portfolio of Arrayan Hamam Al Mubarok - Student at SMK N Tembarak, gamer, reader, and cyclist. Modern futuristic tech & cyberpunk minimalism design.">
+  <meta name="theme-color" content="#05060e">
+  <title>Arrayan Hamam Al Mubarok — Personal Portfolio</title>
+
+  <!-- Google Fonts: Orbitron, Noto Sans JP, Space Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Lucide Icons Script -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Ambient Environment & Futuristic Grid Canvas -->
+  <canvas id="cyber-canvas" class="cyber-bg-canvas" aria-hidden="true"></canvas>
+
+  <div class="ambient-layer" aria-hidden="true">
+    <div class="glow-orb glow-orb-1"></div>
+    <div class="glow-orb glow-orb-2"></div>
+    <div class="glow-orb glow-orb-3"></div>
+  </div>
+
+  <div class="cyber-grid-overlay" aria-hidden="true"></div>
+  <div class="cyber-vignette" aria-hidden="true"></div>
+
+  <!-- Main Content Wrapper -->
+  <div class="content-wrapper">
+
+    <!-- ==========================================
+         1. NAVBAR (Glassmorphic Floating Pill)
+         ========================================== -->
+    <header class="navbar-header">
+      <nav class="navbar-container" aria-label="Main Navigation">
+        <!-- Logo / Brand -->
+        <a href="#home" class="brand-logo" id="brand-logo" aria-label="Arrayan Hamam Al Mubarok Home">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span>ARRAYAN</span>
+        </a>
+
+        <!-- Desktop Navigation Menu -->
+        <ul class="nav-menu" role="menubar">
+          <li role="none"><a href="#home" class="nav-link active" role="menuitem">Home</a></li>
+          <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+          <li role="none"><a href="#hobbies" class="nav-link" role="menuitem">Hobbies</a></li>
+          <li role="none"><a href="#socials" class="nav-link" role="menuitem">Socials</a></li>
+          <li role="none"><a href="#quote" class="nav-link" role="menuitem">Quote</a></li>
+        </ul>
+
+        <!-- Right Actions: Sound FX Toggle & Hamburger Toggle -->
+        <div class="nav-actions">
+          <button id="audio-toggle" class="audio-btn" aria-label="Toggle Sci-Fi Audio FX" title="Toggle Sound FX">
+            <i data-lucide="volume-2" style="width: 16px; height: 16px;"></i>
+          </button>
+
+          <button id="hamburger-btn" class="hamburger-btn" aria-label="Toggle Menu" aria-expanded="false"
+            aria-controls="mobile-drawer">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+      <a href="#home" class="mobile-nav-link">Home</a>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#hobbies" class="mobile-nav-link">Hobbies</a>
+      <a href="#socials" class="mobile-nav-link">Socials</a>
+      <a href="#quote" class="mobile-nav-link">Quote</a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <main>
+
+      <!-- ==========================================
+           2. HERO SECTION
+           ========================================== -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="hero-layout">
+
+            <!-- Left Hero Content -->
+            <div class="hero-content">
+              <div class="hero-tag">
+                <span class="brand-dot"></span>
+                <span>SYSTEM STATUS: ONLINE // 2026</span>
+              </div>
+
+              <div class="hero-intro">HELLO, I'M</div>
+
+              <h1 class="hero-name">
+                <span class="hero-name-gradient">ARRAYAN HAMAM</span><br>
+                <span>AL MUBAROK</span>
+              </h1>
+
+              <div class="hero-school-badge">
+                <i data-lucide="sparkles" style="width: 15px; height: 15px;"></i>
+                <span>SMK N TEMBARAK</span>
+              </div>
+
+              <p class="hero-description">
+                Student, gamer, reader, and cyclist. Navigating virtual realms, uncovering stories through literature,
+                and pursuing endurance on open roads.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#about" class="btn btn-primary" id="btn-explore">
+                  <span>EXPLORE PROFILE</span>
+                  <i data-lucide="arrow-right" style="width: 16px; height: 16px;"></i>
+                </a>
+
+                <a href="#socials" class="btn btn-secondary" id="btn-socials">
+                  <span>MY SOCIALS</span>
+                  <i data-lucide="share-2" style="width: 16px; height: 16px;"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Hero Cyber Dashboard Graphic -->
+            <div class="hero-visual reveal-on-scroll delay-1">
+              <div class="hero-dashboard-frame">
+                <div class="frame-header">
+                  <span class="frame-title">SYS // OPERATOR_ID: 1157</span>
+                  <div class="frame-status">
+                    <span class="brand-dot"></span>
+                    <span>ACTIVE</span>
+                  </div>
+                </div>
+
+                <div class="frame-avatar-wrap">
+                  <img src="assets/izin min 😜😏.jpg" alt="Ijin Kompe" class="frame-avatar-img">
+                  <div class="scan-line" aria-hidden="true"></div>
+                </div>
+
+                <div class="telemetry-row">
+                  <div class="telemetry-item">
+                    <div class="telemetry-label">DESIGNATION</div>
+                    <div class="telemetry-value">STUDENT / GAMER</div>
+                  </div>
+                  <div class="telemetry-item">
+                    <div class="telemetry-label">INSTITUTION</div>
+                    <div class="telemetry-value">SMK N TEMBARAK</div>
+                  </div>
+                  <div class="telemetry-item">
+                    <div class="telemetry-label">SPECIALTY</div>
+                    <div class="telemetry-value">CREATIVE TECH</div>
+                  </div>
+                  <div class="telemetry-item">
+                    <div class="telemetry-label">LOCATION</div>
+                    <div class="telemetry-value">INDONESIA</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==========================================
+           3. ABOUT / PROFILE SECTION
+           ========================================== -->
+      <section id="about" class="about-section">
+        <div class="container">
+
+          <div class="section-label">
+            <span>01 // IDENTITY DASHBOARD</span>
+          </div>
+          <h2 class="section-title">ABOUT ME</h2>
+          <p class="section-subtitle">A glimpse into my educational background, creative passions, and personal
+            philosophy.</p>
+
+          <!-- Large Futuristic Dashboard Card -->
+          <div class="profile-dashboard-card reveal-on-scroll">
+            <div class="profile-corner-accent" aria-hidden="true"></div>
+
+            <div class="profile-grid">
+              <!-- Left: Identity Information -->
+              <div class="profile-main-info">
+                <span class="profile-meta-badge">
+                  <i data-lucide="shield-check" style="width: 13px; height: 13px;"></i>
+                  PERSONAL PROFILE
+                </span>
+
+                <h3 class="profile-user-name">Arrayan Hamam Al Mubarok</h3>
+
+                <div class="profile-school-name">
+                  <i data-lucide="graduation-cap" style="width: 18px; height: 18px;"></i>
+                  <span>SMK N Tembarak</span>
+                </div>
+
+                <p class="profile-bio-text">
+                  A high-school student based in Tembarak, balancing technical studies with a multifaceted digital
+                  lifestyle. Driven by curiosity in modern interactive systems, passionate about immersive digital
+                  worlds, exploring ideas across books, and pursuing stamina on the bicycle track.
+                </p>
+
+                <div class="profile-stats-grid">
+                  <div class="stat-box">
+                    <div class="stat-box-label">ACADEMIC BASE</div>
+                    <div class="stat-box-val">SMK N Tembarak</div>
+                  </div>
+                  <div class="stat-box">
+                    <div class="stat-box-label">CORE VIBE</div>
+                    <div class="stat-box-val">Cyber Minimalist</div>
+                  </div>
+                  <div class="stat-box">
+                    <div class="stat-box-label">FOCUS AREAS</div>
+                    <div class="stat-box-val">Gaming & Tech</div>
+                  </div>
+                  <div class="stat-box">
+                    <div class="stat-box-label">ACTIVE OUTLET</div>
+                    <div class="stat-box-val">Cycling & Reading</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Terminal-styled Data View -->
+              <div class="profile-terminal-wrap">
+                <div class="terminal-header">
+                  <div class="terminal-dots" aria-hidden="true">
+                    <span class="terminal-dot dot-red"></span>
+                    <span class="terminal-dot dot-yellow"></span>
+                    <span class="terminal-dot dot-green"></span>
+                  </div>
+                  <span class="terminal-title">hamam@profile-sys:~# inspect</span>
+                </div>
+
+                <pre class="terminal-code"><code>{
+  <span class="code-key">"operator"</span>: <span class="code-str">"Arrayan Hamam Al Mubarok"</span>,
+  <span class="code-key">"school"</span>: <span class="code-str">"SMK N Tembarak"</span>,
+  <span class="code-key">"hobbies"</span>: [
+    <span class="code-str">"Bermain Game"</span>,
+    <span class="code-str">"Membaca"</span>,
+    <span class="code-str">"Bersepeda"</span>
+  ],
+  <span class="code-key">"status"</span>: <span class="code-str">"Active Student & Explorer"</span>,
+  <span class="code-key">"theme"</span>: <span class="code-str">"Dark / AMIX Futuristic"</span>,
+  <span class="code-key">"accent"</span>: <span class="code-str">"#4dffb8"</span>,
+  <span class="code-key">"verified"</span>: <span class="code-num">true</span>
+}</code></pre>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================
+           4. HOBBIES SECTION
+           ========================================== -->
+      <section id="hobbies" class="hobbies-section">
+        <div class="container">
+
+          <div class="section-label">
+            <span>02 // PASSIONS & PURSUITS</span>
+          </div>
+          <h2 class="section-title">MY HOBBIES</h2>
+          <p class="section-subtitle">The activities that fuel my imagination, broaden my worldview, and keep me moving
+            forward.</p>
+
+          <div class="hobbies-grid">
+
+            <!-- Card 01: Gaming -->
+            <div class="hobby-card reveal-on-scroll delay-1" id="hobby-card-01">
+              <div>
+                <div class="hobby-card-top">
+                  <span class="hobby-number">01</span>
+                  <div class="hobby-icon-wrap" aria-hidden="true">
+                    <i data-lucide="gamepad-2" style="width: 26px; height: 26px;"></i>
+                  </div>
+                </div>
+                <h3 class="hobby-title">GAMING</h3>
+                <p class="hobby-desc">Playing games and exploring different virtual worlds.</p>
+              </div>
+              <div class="hobby-tag">// IMMERSIVE SIMULATIONS & STRATEGY</div>
+            </div>
+
+            <!-- Card 02: Reading -->
+            <div class="hobby-card reveal-on-scroll delay-2" id="hobby-card-02">
+              <div>
+                <div class="hobby-card-top">
+                  <span class="hobby-number">02</span>
+                  <div class="hobby-icon-wrap" aria-hidden="true">
+                    <i data-lucide="book-open" style="width: 26px; height: 26px;"></i>
+                  </div>
+                </div>
+                <h3 class="hobby-title">READING</h3>
+                <p class="hobby-desc">Reading to discover new ideas, stories, and perspectives.</p>
+              </div>
+              <div class="hobby-tag">// KNOWLEDGE EXPANSION & NARRATIVE</div>
+            </div>
+
+            <!-- Card 03: Cycling -->
+            <div class="hobby-card reveal-on-scroll delay-3" id="hobby-card-03">
+              <div>
+                <div class="hobby-card-top">
+                  <span class="hobby-number">03</span>
+                  <div class="hobby-icon-wrap" aria-hidden="true">
+                    <i data-lucide="bike" style="width: 26px; height: 26px;"></i>
+                  </div>
+                </div>
+                <h3 class="hobby-title">CYCLING</h3>
+                <p class="hobby-desc">Enjoying cycling and spending time outdoors.</p>
+              </div>
+              <div class="hobby-tag">// ENDURANCE, FOCUS & OPEN NATURE</div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================
+           5. SOCIAL MEDIA SECTION
+           ========================================== -->
+      <section id="socials" class="socials-section">
+        <div class="container">
+
+          <div class="section-label">
+            <span>03 // NETWORKS</span>
+          </div>
+          <h2 class="section-title">FIND ME ONLINE</h2>
+          <p class="section-subtitle">Connect across gaming channels, content platforms, and online spaces.</p>
+
+          <div class="socials-grid">
+
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@srslynonexistent" target="_blank" rel="noopener noreferrer"
+              class="social-card reveal-on-scroll delay-1" id="social-youtube"
+              aria-label="YouTube channel @srslynonexistent">
+              <div class="social-left">
+                <div class="social-icon-box" style="color: #ff3344;">
+                  <i data-lucide="youtube" style="width: 28px; height: 28px;"></i>
+                </div>
+                <div class="social-meta">
+                  <h3 class="social-platform">YouTube</h3>
+                  <span class="social-handle">@srslynonexistent</span>
+                  <span class="social-desc">Gameplay clips, montages, and videos</span>
+                </div>
+              </div>
+              <div class="social-arrow" aria-hidden="true">
+                <i data-lucide="external-link" style="width: 18px; height: 18px;"></i>
+              </div>
+            </a>
+
+            <!-- TikTok -->
+            <a href="https://www.tiktok.com/@srslynonexistent" target="_blank" rel="noopener noreferrer"
+              class="social-card reveal-on-scroll delay-2" id="social-tiktok"
+              aria-label="TikTok profile @srslynonexistent">
+              <div class="social-left">
+                <div class="social-icon-box" style="color: #64d7ff;">
+                  <!-- Official TikTok SVG Icon -->
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-2.89 2.893 2.895 2.895 0 0 1-2.894-2.893 2.895 2.895 0 0 1 2.894-2.893c.316 0 .618.053.9.15v-3.52a6.34 6.34 0 0 0-.9-.064 6.34 6.34 0 0 0-6.342 6.327 6.34 6.34 0 0 0 6.342 6.328 6.34 6.34 0 0 0 6.342-6.328V9.176a8.21 8.21 0 0 0 4.763 1.51v-3.52c-.347 0-.693-.16-.998-.48z" />
+                  </svg>
+                </div>
+                <div class="social-meta">
+                  <h3 class="social-platform">TikTok</h3>
+                  <span class="social-handle">@srslynonexistent</span>
+                  <span class="social-desc">Short-form videos, highlights, and clips</span>
+                </div>
+              </div>
+              <div class="social-arrow" aria-hidden="true">
+                <i data-lucide="external-link" style="width: 18px; height: 18px;"></i>
+              </div>
+            </a>
+
+            <!-- Twitter / X -->
+            <a href="https://x.com/NONEXISTENT620" target="_blank" rel="noopener noreferrer"
+              class="social-card reveal-on-scroll delay-3" id="social-twitter"
+              aria-label="Twitter X profile @NONEXISTENT620">
+              <div class="social-left">
+                <div class="social-icon-box" style="color: #eef0ff;">
+                  <!-- Official X (Twitter) SVG Icon -->
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                  </svg>
+                </div>
+                <div class="social-meta">
+                  <h3 class="social-platform">Twitter / X</h3>
+                  <span class="social-handle">@NONEXISTENT620</span>
+                  <span class="social-desc">Personal thoughts and digital updates</span>
+                </div>
+              </div>
+              <div class="social-arrow" aria-hidden="true">
+                <i data-lucide="external-link" style="width: 18px; height: 18px;"></i>
+              </div>
+            </a>
+
+            <!-- Discord -->
+            <a href="https://discordapp.com/users/11576201171750518847" target="_blank" rel="noopener noreferrer"
+              class="social-card reveal-on-scroll delay-4" id="social-discord" aria-label="Discord profile NONEXISTENT">
+              <div class="social-left">
+                <div class="social-icon-box" style="color: #7289da;">
+                  <i data-lucide="message-square" style="width: 26px; height: 26px;"></i>
+                </div>
+                <div class="social-meta">
+                  <h3 class="social-platform">Discord</h3>
+                  <span class="social-handle">NONEXISTENT</span>
+                  <span class="social-desc">Direct messaging, gaming, and community</span>
+                </div>
+              </div>
+              <div class="social-arrow" aria-hidden="true">
+                <i data-lucide="external-link" style="width: 18px; height: 18px;"></i>
+              </div>
+            </a>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==========================================
+           6. QUOTE SECTION
+           ========================================== -->
+      <section id="quote" class="quote-section">
+        <div class="container">
+
+          <div class="quote-card reveal-on-scroll">
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <blockquote class="quote-text">
+              "I'm tired of pretending that i'm okay when all i want is someone to truly see how broken i am."
+            </blockquote>
+            <div class="quote-author">
+              <span>— ARRAYAN HAMAM AL MUBAROK</span> // PERSPECTIVE
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- ==========================================
+         7. FOOTER SECTION
+         ========================================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+
+          <div class="footer-brand-wrap">
+            <div class="footer-brand">ARRAYAN</div>
+            <div class="footer-tagline">Built with curiosity &amp; creativity.</div>
+          </div>
+
+          <div class="footer-copy">
+            &copy; 2026 Arrayan Hamam Al Mubarok. All rights reserved.
+          </div>
+
+          <div class="footer-socials">
+            <a href="https://www.youtube.com/@srslynonexistent" target="_blank" rel="noopener noreferrer"
+              class="footer-social-link" aria-label="YouTube">
+              <i data-lucide="youtube" style="width: 16px; height: 16px;"></i>
+            </a>
+            <a href="https://www.tiktok.com/@srslynonexistent" target="_blank" rel="noopener noreferrer"
+              class="footer-social-link" aria-label="TikTok">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-2.89 2.893 2.895 2.895 0 0 1-2.894-2.893 2.895 2.895 0 0 1 2.894-2.893c.316 0 .618.053.9.15v-3.52a6.34 6.34 0 0 0-.9-.064 6.34 6.34 0 0 0-6.342 6.327 6.34 6.34 0 0 0 6.342 6.328 6.34 6.34 0 0 0 6.342-6.328V9.176a8.21 8.21 0 0 0 4.763 1.51v-3.52c-.347 0-.693-.16-.998-.48z" />
+              </svg>
+            </a>
+            <a href="https://x.com/NONEXISTENT620" target="_blank" rel="noopener noreferrer" class="footer-social-link"
+              aria-label="Twitter X">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+            </a>
+            <a href="https://discordapp.com/users/11576201171750518847" target="_blank" rel="noopener noreferrer"
+              class="footer-social-link" aria-label="Discord">
+              <i data-lucide="message-square" style="width: 16px; height: 16px;"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Floating Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top" title="Back to Top">
+      <i data-lucide="chevron-up" style="width: 22px; height: 22px;"></i>
+    </button>
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="profile-data.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // Initialize Lucide Icons
+    if (window.lucide) {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+
+</html>
